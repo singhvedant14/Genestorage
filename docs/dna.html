@@ -100,5 +100,20 @@
   <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
+  <!-- ✅ BACK BUTTON -->
+  <button class="back-btn" onclick="goBack()">← Back</button>
+
+  <h1>DNA Data Storage</h1>
+  <p>This is the presentation content.</p>
+
+  <script>
+    function goBack() {
+      if (history.length > 1) {
+        history.back();   // go back to where user came from
+      } else {
+        window.location.href = "index.html"; // fallback
+      }
+    }
+  </script>
 </body>
 </html>
